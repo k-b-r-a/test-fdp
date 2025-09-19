@@ -6,14 +6,17 @@ def is_even(num):
     return num % 2 == 0
 
 
-def main():
-
-    num = get_number()
-
-    if is_even(num):
+def show_result(result, num):
+    if result:
         print(f"{num} is even.")
     else:
         print(f"{num} is odd.")
+
+
+def main():
+
+    num = get_number()
+    show_result(is_even(num), num)
 
 
 main()
