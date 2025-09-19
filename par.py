@@ -1,6 +1,10 @@
+def get_number():
+    return int(input("Enter a number positive: "))
+
+
 def main():
 
-    num = int(input("Enter a number positive: "))
+    num = get_number()
 
     if num % 2 == 0:
         print(f"{num} is even.")
